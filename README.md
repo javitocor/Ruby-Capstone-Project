@@ -3,8 +3,22 @@
 
 # What it does
 
+# Project Structure
+
+├── README.md
+├── bin
+│   └── main.rb
+└── lib
+    └── bot.rb
+    └── 
+└── rspec
+    └── bot_spec.rb    
+    └── spec_helper.rb
 
 # Built With
+- Ruby
+- Nokogiri gem
+- HTTParty gem
 
 # Live Demo
 [Live Demo Link]()
@@ -12,25 +26,22 @@
 # Getting Started
 To get a local copy up and running follow these simple example steps.
 
-Clone the project unto your local machine
-cd into the folder, find the index.html file and open it
+Clone the project unto your local machine.
+cd into the folder, and run "main.rb"
 
 # Prerequisites
-- Get your browsers up to date
+- Get Ruby latest version.
 
 # Install
-- Install VSCode or any code editor you like
-- Install Node JS and nmp(most recents versions)
-- Run this command on your terminal in order to install stylelint: npm install stylelint stylelint-config-recommended --save-dev 
+- Git clone this repo and cd the to the  directory.
+- Run bundle install in command line to install Nokogiri and HTTParty Gem.
+- Run ruby bin/main.rb.
 
 # Run tests
-- Test the css by typing the command: npx stylelint .
-- Go to http://validator.w3.org/ , upload the index.html file to test it.
-
-# Deployment
-- Get an online web hosting
-- Upload all the files in the htdocs folder of your domain
-- Access your domain name in browser
+- Git clone this repo and cd the to the .
+- Install rspec with gem install rspec.
+- Run rspec in Command Line.
+- 15 examples, 0 failures will be shown on the screen.
 
 # Author
 
@@ -41,9 +52,18 @@ cd into the folder, find the index.html file and open it
 - Linkedin: [linkedin](https://www.linkedin.com/in/javier-correas-sanchez-cuesta-15289482/)
 
 # 🤝 Contributing
-Contributions, issues and feature requests are welcome!
+Contributions, issues and feature requests are welcome! Start by:
 
-Feel free to check the [issues page]().
+Forking the project.
+Cloning the project to your local machine.
+cd into the project directory.
+Run git checkout -b your-branch-name.
+Make your contributions.
+Push your branch up to your forked repository.
+Open a Pull Request with a detailed description to the development branch of the original project for a review.
+
+# Video Presentation
+Feel free to check out this [link] with a full project explanation.
 
 # Attributions and Credit
 🚀

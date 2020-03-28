@@ -5,6 +5,8 @@ require 'Pry'
 require 'JSON'
 require 'csv'
 
+require './lib/bot.rb'
+
 class Start
 
     def initialize
@@ -28,7 +30,8 @@ class Start
 
     def search
         input
-
+        searching = Bot.new
+        searching.parse
         show_results
     end
 
