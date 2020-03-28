@@ -1,2 +1,8 @@
 require 'open-uri'
-require 'nokogiri'
+require 'Nokogiri'
+require 'HTTParty'
+require 'Pry'
+require 'JSON'
+require 'csv'
+
+
