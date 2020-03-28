@@ -5,19 +5,20 @@ require 'Pry'
 require 'JSON'
 require 'csv'
 
-require './lib/bot.rb'
+require_relative '../lib/bot.rb'
 
 class Start
 
     def initialize
-
+     @keywords = []
     end
 
     def input
-        puts 'Search in'
-        puts 'Please enter the keywords'
+        puts 'Search in amazon.com'
+        puts 'Please enter the keywords for your search'
+        puts 'You can write different keywords separated by one space'
         input = gets.chomp
-        if input.empty?
+        while input.empty?
             puts "Please enter a keyword"
             input = gets.chomp
         end
@@ -30,16 +31,15 @@ class Start
 
     def search
         input
-        searching = Bot.new
-        searching.parse
+        @searching = Bot.new(@keywords)
+        @searching.get_names
+        @searching.get_prices
         show_results
     end
 
     def show_results
         puts "***********"
-        puts "The search has finished"
-        puts "We have found #{} results that match your keywords"
-        puts "Here you can find the list: "
+        @searching.print_results
         puts "***********"
         sleep 2
         puts "You can find a file with the results in "
@@ -48,7 +48,7 @@ class Start
     end
 
     def research
-        print "Do you want to do another search? (y/n)"
+        print "Do you want to do another search? (y/n) "
         research = gets.chomp
         research == "y" ? search : (p 'Thank you for choosing us, goodbye!')
     end
