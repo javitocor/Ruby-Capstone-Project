@@ -1,3 +1,7 @@
+require 'Nokogiri'
+require 'HTTParty'
+require 'csv'
+
 class Bot
 
     attr_accessor :parse_page

@@ -3,6 +3,7 @@ require 'HTTParty'
 require 'csv'
 
 require_relative '../lib/bot.rb'
+require_relative '../lib/export.rb'
 
 class Start
 
@@ -37,8 +38,11 @@ class Start
         @searching.print_results
         puts "***********"
         sleep 1.5
-        puts "You can find a file with the results in "
-        sleep 1.7
+        @exporting = Export.new(@searching.get_names, @searching.get_prices)
+        puts "...exporting data"
+        puts "You can find a file with the results in your current folder"
+        puts "-----------"
+        sleep 1.7        
         research
     end
 
