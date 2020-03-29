@@ -36,9 +36,9 @@ class Start
         puts "***********"
         @searching.print_results
         puts "***********"
-        sleep 2
-        puts "You can find a file with the results in "
         sleep 1.5
+        puts "You can find a file with the results in "
+        sleep 1.7
         research
     end
 
