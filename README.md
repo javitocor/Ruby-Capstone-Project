@@ -32,10 +32,10 @@ With this program, built with Ruby, you can access to all the data from Disney's
 # Install
 - Git clone this repo and cd the to the  directory.
 - Run bundle install in command line to install Nokogiri and HTTParty Gem.
-- Run ruby './bin/main.rb'.
+- Run 'ruby ./bin/main.rb'.
 
 # Getting Started
-- Once you have cloned the repo and run './bin/main.rb' you will be able to add as many keywords ( space-separated ) as you wish to get the results from Disney's online shop.
+- Once you have cloned the repo and run 'ruby ./bin/main.rb' you will be able to add as many keywords ( space-separated ) as you wish to get the results from Disney's online shop.
 
 # Run tests
 - Git clone this repo and cd the to the repositorie folder.

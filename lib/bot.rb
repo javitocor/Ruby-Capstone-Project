@@ -68,7 +68,7 @@ class Bot
 
     def print_results
         puts "The search has finished"
-        puts "We have found #{@items} results that match your keywords"
+        puts "We have found #{@items.to_i} results that match your keywords"
         puts "Here you can find the list: "
         (0...@items).each do |index|
             puts "---- Index: #{index+1} ----"
