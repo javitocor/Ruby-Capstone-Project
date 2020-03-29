@@ -1,7 +1,8 @@
-# Project Name
-
+# Ruby Capstone Project
+This is the Ruby's Capstone project for Microverse. This project creates a web scraper built-up with Ruby
 
 # What it does
+With this program, built with Ruby, you can access to all the data from Disney's online shop, get all the products and its prices. You will not lose more time navigating through the website, the products are listed on your terminal and stored in an HTML file.
 
 # Project Structure
 
@@ -20,7 +21,7 @@
 - Nokogiri gem
 - HTTParty gem
 
-# Live Demo
+# Live Demo Presentation
 [Live Demo Link]()
 
 # Getting Started

@@ -1,7 +1,5 @@
-require 'open-uri'
 require 'Nokogiri'
 require 'HTTParty'
-require 'JSON'
 require 'csv'
 
 require_relative '../lib/bot.rb'
@@ -25,7 +23,7 @@ class Start
     end
 
     def banner
-        puts File.read('./banner.txt')
+        puts File.read('./assets/banner.txt')
     end
 
     def search
