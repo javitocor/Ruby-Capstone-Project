@@ -2,9 +2,11 @@ require 'Nokogiri'
 require 'HTTParty'
 require 'csv'
 
-class Bot
+require_relative '../lib/export.rb'
 
-    attr_accessor :parse_page
+class Bot 
+
+    attr_accessor :parse_page, :result_name, :result_price
 
     def initialize(keywords)
         @keywords = keywords
@@ -78,5 +80,9 @@ class Bot
             puts "---- Index: #{index+1} ----"
             puts "Product: #{@result_name[index]} | Price: #{@result_price[index]}"
         end
+    end
+
+    def export_csv
+        @data = Export.new(@result_name, @result_price)
     end
 end

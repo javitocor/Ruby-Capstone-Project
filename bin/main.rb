@@ -38,8 +38,8 @@ class Start
         @searching.print_results
         puts "***********"
         sleep 1.5
-        @exporting = Export.new(@searching.get_names, @searching.get_prices)
-        puts "...exporting data"
+        @searching.export_csv
+        puts "...exporting data..."
         puts "You can find a file with the results in your current folder"
         puts "-----------"
         sleep 1.7        
