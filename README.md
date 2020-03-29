@@ -4,6 +4,10 @@ This is the Ruby's Capstone project for Microverse. This project creates a web s
 # What it does
 With this program, built with Ruby, you can access to all the data from Disney's online shop, get all the products and its prices. You will not lose more time navigating through the website, the products are listed on your terminal and stored in an HTML file.
 
+# Screenshots
+![screenshot](/assets/screenshot.png) 
+![screenshot](/assets/screenshot2.png)
+
 # Project Structure
 
 ├── README.md
@@ -21,25 +25,20 @@ With this program, built with Ruby, you can access to all the data from Disney's
 - Nokogiri gem
 - HTTParty gem
 
-# Live Demo Presentation
-[Live Demo Link]()
-
-# Getting Started
-To get a local copy up and running follow these simple example steps.
-
-Clone the project unto your local machine.
-cd into the folder, and run "main.rb"
-
 # Prerequisites
 - Get Ruby latest version.
+- You can check your version typing 'ruby -v' on your terminal
 
 # Install
 - Git clone this repo and cd the to the  directory.
 - Run bundle install in command line to install Nokogiri and HTTParty Gem.
-- Run ruby bin/main.rb.
+- Run ruby './bin/main.rb'.
+
+# Getting Started
+- Once you have cloned the repo and run './bin/main.rb' you will be able to add as many keywords ( space-separated ) as you wish to get the results from Disney's online shop.
 
 # Run tests
-- Git clone this repo and cd the to the .
+- Git clone this repo and cd the to the repositorie folder.
 - Install rspec with gem install rspec.
 - Run rspec in Command Line.
 - 15 examples, 0 failures will be shown on the screen.
@@ -74,6 +73,6 @@ Give a ⭐️ if you like this project!
 
 📝 License
 
-Check out my stories on medium to see what I'm talking about! Follow me on Instagram and Twitter to see what I am up to!
+Check out my stories on Medium to see what I'm talking about! Follow me on Linkedin and Twitter to see what I am up to!
 
 Enjoy!
