@@ -1,7 +1,6 @@
 require 'open-uri'
 require 'Nokogiri'
 require 'HTTParty'
-require 'Pry'
 require 'JSON'
 require 'csv'
 
@@ -14,7 +13,7 @@ class Start
     end
 
     def input
-        puts 'Search in amazon.com'
+        puts 'Search in Disney.com'
         puts 'Please enter the keywords for your search'
         puts 'You can write different keywords separated by one space'
         input = gets.chomp
@@ -32,8 +31,6 @@ class Start
     def search
         input
         @searching = Bot.new(@keywords)
-        @searching.get_names
-        @searching.get_prices
         show_results
     end
 
@@ -48,7 +45,7 @@ class Start
     end
 
     def research
-        print "Do you want to do another search? (y/n) "
+        print "Do you need to search anything else? (y/n) "
         research = gets.chomp
         research == "y" ? search : (p 'Thank you for choosing us, goodbye!')
     end

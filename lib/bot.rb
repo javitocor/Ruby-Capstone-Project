@@ -5,8 +5,17 @@ class Bot
     def initialize(keywords)
         @keywords = keywords
         @result_name = []
-        @result_price = []
-        @total_results = 0
+        @result_price = []       
+        parse(create_link)
+        num_pages
+        parse_results
+    end
+    
+    def num_pages
+        @items = @parse_page.css('h6#total-items span').text.to_f
+        @items_per_page = 96
+        @pages = (@items/@items_per_page).ceil
+        return @pages
     end
 
     def keywords_str(keywords)
@@ -15,8 +24,7 @@ class Bot
     end
 
     def create_link 
-        link = 'https://www.amazon.com/s?k=shoes+blue&ref=nb_sb_noss_2'
-        link2 = "https://www.amazon.com/s?k=#{keywords_str(@keywords)}&ref=nb_sb_noss_2"
+        link = "https://www.shopdisney.co.uk/search?q=#{keywords_str(@keywords)}"        
         return link
     end
 
@@ -26,35 +34,45 @@ class Bot
         return @parse_page
     end
 
+    def parse_results
+        if @items < @items_per_page
+            get_names
+            get_prices
+        else
+            @number = 0
+            while @pages > 0         
+                link2 = "https://www.shopdisney.co.uk/search?q=disney&sz=96&start=#{@number}"
+                parse(link2)
+                get_names
+                get_prices
+                @pages -= 1
+                @number += 96
+            end
+        end
+    end
+
     def get_names
-        parse(create_link)
-        @parse_page.css('span.a-size-base-plus.a-color-base.a-text-normal').map do |name|
+        parse_page.css('h4.product__tilename').map do |name|
             name_str = name.text
             @result_name.push(name_str)
         end
     end
 
     def get_prices
-        parse(create_link)
-        @parse_page.css('span.a-price-whole').map do |price|
+        parse_page.css('span.price__current').map do |price|
             price_str = price.text
+            price_str = price_str.strip
             @result_price.push(price_str)
         end
-    end
-    
-    def total
-        @total_results = @result_name.length        
     end
 
     def print_results
         puts "The search has finished"
-        total
-        puts "We have found #{@total_results} results that match your keywords"
+        puts "We have found #{@items} results that match your keywords"
         puts "Here you can find the list: "
-        (0...@total_results).each do |index|
-        puts "----Index: #{index+1}----"
-        puts "Product: #{@result_name[index]} | Price: #{@result_price[index]}"
+        (0...@items).each do |index|
+            puts "---- Index: #{index+1} ----"
+            puts "Product: #{@result_name[index]} | Price: #{@result_price[index]}"
         end
     end
-
 end
