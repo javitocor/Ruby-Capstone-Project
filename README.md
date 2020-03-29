@@ -54,7 +54,7 @@ With this program, built with Ruby, you can access to all the data from Disney's
 # 🤝 Contributing
 Contributions, issues and feature requests are welcome! Start by:
 
--Forking the project.
+- Forking the project.
 - Cloning the project to your local machine.
 - cd into the project directory.
 - Run git checkout -b your-branch-name.
