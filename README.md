@@ -6,7 +6,7 @@ With this program, built with Ruby, you can access to all the data from Disney's
 
 # Screenshots
 ![screenshot](/assets/screenshot.png) 
-![screenshot](/assets/screenshot2.png)
+![screenshot](/assets/screenshot3.png)
 
 # Project Structure
 ```
