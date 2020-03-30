@@ -2,23 +2,23 @@
 This is the Ruby's Capstone project for Microverse. This project creates a web scraper built-up with Ruby
 
 # What it does
-With this program, built with Ruby, you can access to all the data from Disney's online shop, get all the products and its prices. You will not lose more time navigating through the website, the products are listed on your terminal and stored in an HTML file.
+With this program, built with Ruby, you can access to all the data from Disney's online shop, get all the products and its prices. You will not lose more time navigating through the website, the products are listed on your terminal and stored in an CSV file.
 
 # Screenshots
 ![screenshot](/assets/screenshot.png) 
 ![screenshot](/assets/screenshot2.png)
 
 # Project Structure
-
-├── README.md
-├── bin
-│   └── main.rb
-└── lib
-    └── bot.rb
-    └── 
-└── rspec
-    └── bot_spec.rb    
-    └── spec_helper.rb
+|--- README.MD
+|--- bin
+|     |--- main.rb
+|--- lib
+      |--- bot.rb
+      |--- export.rb
+|--- spec
+      |--- main_spec.rb
+      |--- bot_spec.rb
+      |--- spec_helper.rb
 
 # Built With
 - Ruby
