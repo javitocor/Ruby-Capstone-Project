@@ -9,13 +9,16 @@ With this program, built with Ruby, you can access to all the data from Disney's
 ![screenshot](/assets/screenshot2.png)
 
 # Project Structure
-|--- README.MD
-|--- bin
-|     |--- main.rb
-|--- lib
+ |--- README.MD
+
+ |--- bin
+
+ |     |--- main.rb
+ |--- lib
+
       |--- bot.rb
       |--- export.rb
-|--- spec
+ |--- spec
       |--- main_spec.rb
       |--- bot_spec.rb
       |--- spec_helper.rb
