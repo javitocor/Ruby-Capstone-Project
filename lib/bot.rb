@@ -80,6 +80,7 @@ class Bot
             puts "---- Index: #{index+1} ----"
             puts "Product: #{@result_name[index]} | Price: #{@result_price[index]}"
         end
+        p "The prices are shown in UK Pounds"
     end
 
     def export_csv

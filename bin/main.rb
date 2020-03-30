@@ -8,7 +8,7 @@ require_relative '../lib/export.rb'
 class Start
 
     def initialize
-     @keywords = []
+        banner
     end
 
     def input
@@ -19,9 +19,9 @@ class Start
         while input.empty?
             puts "Please enter a keyword"
             input = gets.chomp
-        end
-        @keywords = input.split(" ")
+        end        
         p "Thank you!"
+        @keywords = input.split(" ")
     end
 
     def banner
@@ -49,19 +49,21 @@ class Start
         @searching.export_csv
         puts "...exporting data..."
         puts "You can find a file with the results in your current folder"
-        puts "-----------"
+        puts "**********"
         sleep 1.7
     end
 
     def research
         print "Do you need to search anything else? (y/n) "
-        research = gets.chomp
+        research = gets.chomp 
+        restart(research)       
+    end
+
+    def restart(research)
         research == "y" ? search : (p 'Thank you for choosing us, goodbye!')
     end
-    
 end
 
 
 new_search = Start.new
-new_search.banner
 new_search.search
