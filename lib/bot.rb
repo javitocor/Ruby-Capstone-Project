@@ -91,7 +91,7 @@ class Bot
       puts "---- Index: #{index + 1} ----"
       puts "Product: #{@result_name[index]} | Price: #{@result_price[index]} | link: #{@result_access[index]}" 
     end
-    puts 'The prices are shown in UK Pounds'
+    p 'The prices are shown in UK Pounds'
   end
 
   def export_csv

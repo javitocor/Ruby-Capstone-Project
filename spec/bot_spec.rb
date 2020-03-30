@@ -28,14 +28,19 @@ RSpec.describe Bot do
       expect(bot.parse(link).class).to eql(Nokogiri::HTML::Document)
     end
   end
-  describe '#get_names' do
+  describe '#products' do
     it 'returns an array with the products of the search' do
-      expect(bot.get_names.class).to eql(Array)
+      expect(bot.products.class).to eql(Array)
     end
   end
-  describe '#get_prices' do
+  describe '#prices' do
     it 'returns an array with the prices of the products' do
-      expect(bot.get_names.class).to eql(Array)
+      expect(bot.prices.class).to eql(Array)
+    end
+  end
+  describe '#access' do
+    it 'returns an array with the links to the products' do
+      expect(bot.access.class).to eql(Array)
     end
   end
   describe '#print_results' do
