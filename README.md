@@ -9,20 +9,18 @@ With this program, built with Ruby, you can access to all the data from Disney's
 ![screenshot](/assets/screenshot2.png)
 
 # Project Structure
- |--- README.MD
-
- |--- bin      
-      |--- main.rb
-
- |--- lib       
-      |--- bot.rb
-      |--- export.rb
-
- |--- spec            
-      |--- main_spec.rb
-      |--- bot_spec.rb
-      |--- spec_helper.rb
-
+```
+├── README.md
+├── bin
+│   └── main.rb
+└── lib
+    └── bot.rb
+    └── export.rb
+└── rspec
+    └── main_spec.rb
+    └── bot_spec.rb
+    └── spec_helper.rb
+```
 # Built With
 - Ruby
 - Nokogiri gem
@@ -66,7 +64,7 @@ Contributions, issues and feature requests are welcome! Start by:
 - Open a Pull Request with a detailed description to the development branch of the original project for a review.
 
 # Video Presentation
-Feel free to check out this [link] with a full project explanation.
+- Feel free to check out this [link] with a full project explanation.
 
 # Attributions and Credit
 🚀
