@@ -11,6 +11,7 @@ class Bot
     @keywords = keywords
     @result_name = []
     @result_price = []
+    @result_access = []
     parse(create_link)
     num_pages
     parse_results
@@ -44,6 +45,7 @@ class Bot
     if @items < @items_per_page
       products
       prices
+      access
     else
       @number = 0
       while @pages > 0
@@ -51,6 +53,7 @@ class Bot
         parse(link2)
         products
         prices
+        access
         @pages -= 1
         @number += 96
       end
@@ -73,15 +76,22 @@ class Bot
     end
   end
 
+  def access
+    parse_page.css('a.productinfo__wrapper').map do |link|
+      access_str = link['href']
+      @result_access.push(access_str)
+    end
+  end
+
   def print_results
     puts 'The search has finished'
     puts "We have found #{@items.to_i} results that match your keywords"
     puts 'Here you can find the list: '
     (0...@items).each do |index|
       puts "---- Index: #{index + 1} ----"
-      puts "Product: #{@result_name[index]} | Price: #{@result_price[index]}"
+      puts "Product: #{@result_name[index]} | Price: #{@result_price[index]} | link: #{@result_access[index]}" 
     end
-    p 'The prices are shown in UK Pounds'
+    puts 'The prices are shown in UK Pounds'
   end
 
   def export_csv

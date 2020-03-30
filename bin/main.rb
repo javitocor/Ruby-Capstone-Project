@@ -41,9 +41,9 @@ class Start
   end
 
   def show_results
-    p '***********'
+    puts '***********'
     @searching.print_results
-    p '***********'
+    puts '***********'
   end
 
   def exportation
