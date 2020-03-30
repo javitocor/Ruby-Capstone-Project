@@ -89,7 +89,7 @@ class Bot
     puts 'Here you can find the list: '
     (0...@items).each do |index|
       puts "---- Index: #{index + 1} ----"
-      puts "Product: #{@result_name[index]} | Price: #{@result_price[index]} | link: #{@result_access[index]}" 
+      puts "Product: #{@result_name[index]} | Price: #{@result_price[index]} | link: #{@result_access[index]}"
     end
     p 'The prices are shown in UK Pounds'
   end
