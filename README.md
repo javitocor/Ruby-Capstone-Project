@@ -12,13 +12,16 @@ With this program, built with Ruby, you can access to all the data from Disney's
  |--- README.MD
 
  |--- bin
- |     |--- main.rb
+      |      
+      |--- main.rb
 
  |--- lib
+
       |--- bot.rb
       |--- export.rb
-      
+
  |--- spec
+ 
       |--- main_spec.rb
       |--- bot_spec.rb
       |--- spec_helper.rb
