@@ -25,7 +25,10 @@ class Start
     end
 
     def banner
-        p File.read('./assets/banner.txt')
+        puts 'Welcome to'
+        puts File.read('./assets/banner.txt')
+        puts 'This website helps you to find everything you want in Disney online shop.'
+        puts 'Type your keywords separated by one space and press enter to find out everything related to Disney.'
     end
 
     def search
