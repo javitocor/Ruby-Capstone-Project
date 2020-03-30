@@ -21,29 +21,36 @@ class Start
             input = gets.chomp
         end
         @keywords = input.split(" ")
+        p "Thank you!"
     end
 
     def banner
-        puts File.read('./assets/banner.txt')
+        p File.read('./assets/banner.txt')
     end
 
     def search
         input
         @searching = Bot.new(@keywords)
+        p "Search in progess..."
+        sleep 1
         show_results
+        exportation                
+        research
     end
 
     def show_results
-        puts "***********"
+        p "***********"
         @searching.print_results
-        puts "***********"
+        p "***********"
+    end
+
+    def exportation        
         sleep 1.5
         @searching.export_csv
         puts "...exporting data..."
         puts "You can find a file with the results in your current folder"
         puts "-----------"
-        sleep 1.7        
-        research
+        sleep 1.7
     end
 
     def research
