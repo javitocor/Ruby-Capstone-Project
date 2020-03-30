@@ -95,6 +95,6 @@ class Bot
   end
 
   def export_csv
-    @data = Export.new(@result_name, @result_price)
+    @data = Export.new(@result_name, @result_price, @result_access)
   end
 end
