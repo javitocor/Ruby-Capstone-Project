@@ -86,7 +86,7 @@ class Bot
   def print_results
     puts 'The search has finished'
     puts "We have found #{@items.to_i} results that match your keywords"
-    puts 'Here you can find the list: '
+    puts 'Here you can find the products, prices and links: '
     (0...@items).each do |index|
       puts "---- Index: #{index + 1} ----"
       puts "Product: #{@result_name[index]} | Price: #{@result_price[index]} | link: #{@result_access[index]}"
