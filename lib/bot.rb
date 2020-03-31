@@ -1,5 +1,5 @@
-require 'Nokogiri'
-require 'HTTParty'
+require 'nokogiri'
+require 'httparty'
 require 'csv'
 
 require_relative '../lib/export.rb'

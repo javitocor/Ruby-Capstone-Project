@@ -1,7 +1,3 @@
-require 'Nokogiri'
-require 'HTTParty'
-require 'csv'
-
 require_relative '../lib/bot.rb'
 require_relative '../lib/export.rb'
 
