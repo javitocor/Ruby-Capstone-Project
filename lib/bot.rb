@@ -5,7 +5,7 @@ require 'csv'
 require_relative '../lib/export.rb'
 
 class Bot
-  attr_accessor :parse_page, :result_name, :result_price
+  attr_reader :parse_page, :result_name, :result_price
 
   def initialize(keywords)
     @keywords = keywords
