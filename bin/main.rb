@@ -23,7 +23,7 @@ class Start
   def input
     puts 'Search in Disney.com'
     puts 'Please enter the keywords for your search'
-    puts 'You can write different keywords, separated by one space, for any single search'
+    puts 'You can write different keywords, separated by one space, for a single search'
     input = gets.chomp
     while input.empty?
       puts 'Please enter a keyword'
