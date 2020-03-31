@@ -5,6 +5,7 @@ require_relative '../lib/bot.rb'
 class Start
   def initialize
     banner
+    @searches = 0
   end
 
   def search
@@ -47,9 +48,10 @@ class Start
 
   def exportation
     sleep 1.5
-    @searching.export_csv
+    @searches += 1
+    @searching.export_csv(@searches)
     puts '...exporting data...'
-    puts 'You can find a file with the results in your current folder'
+    puts 'You can find the file(s) with the results of your search in your current folder'
     puts '**********'
     sleep 1.7
   end

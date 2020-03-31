@@ -99,7 +99,7 @@ class Bot
     p 'The prices are shown in UK Pounds'
   end
 
-  def export_csv
-    @data = Export.new(@result_name, @result_price, @result_access)
+  def export_csv(searches)
+    @data = Export.new(@result_name, @result_price, @result_access, searches)
   end
 end
