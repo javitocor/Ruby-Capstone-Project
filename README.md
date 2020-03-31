@@ -64,7 +64,7 @@ Contributions, issues and feature requests are welcome! Start by:
 - Open a Pull Request with a detailed description to the development branch of the original project for a review.
 
 # Video Presentation
-- Feel free to check out this [link](https://www.loom.com/share/2960dfb8dee840cf9107be44a1c81f60) with a full project explanation.
+- Feel free to check out this [link](https://www.loom.com/share/22e25618bb0e4accb0c20c12a11dcd27) with a full project explanation.
 
 # Attributions and Credit 🚀
 - Microverse
