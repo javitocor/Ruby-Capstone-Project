@@ -62,14 +62,14 @@ class Bot
 
   # rubocop: enable Style/NumericPredicate
   def products
-    parse_page.css('h4.product__tilename').map do |name|
+    @parse_page.css('h4.product__tilename').map do |name|
       name_str = name.text
       @result_name.push(name_str)
     end
   end
 
   def prices
-    parse_page.css('span.price__current').map do |price|
+    @parse_page.css('span.price__current').map do |price|
       price_str = price.text
       price_str = price_str.strip
       @result_price.push(price_str)
@@ -77,7 +77,7 @@ class Bot
   end
 
   def access
-    parse_page.css('a.productinfo__wrapper').map do |link|
+    @parse_page.css('a.productinfo__wrapper').map do |link|
       access_str = link['href']
       @result_access.push(access_str)
     end
