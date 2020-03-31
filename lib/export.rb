@@ -9,9 +9,11 @@ class Export
     @searches = searches
     export_data
   end
+
   private
+
   def export_data
-    CSV.open("search_disney(#{@searches}).csv", "w") do |csv|
+    CSV.open("search_disney(#{@searches}).csv", 'w') do |csv|
       @products.zip(@prices, @access) { |x| csv << x }
     end
   end

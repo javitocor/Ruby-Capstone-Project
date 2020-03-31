@@ -29,7 +29,7 @@ class Start
       puts 'Please enter a keyword'
       input = gets.chomp
     end
-    p 'Thank you!'
+    puts 'Thank you!'
     @keywords = input.split(' ')
   end
 
