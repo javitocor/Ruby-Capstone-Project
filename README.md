@@ -42,7 +42,7 @@ With this program, built with Ruby, you can access to all the data from Disney's
 - Git clone this repo and cd the to the repositorie folder.
 - Install rspec with gem install rspec.
 - Run rspec in Command Line.
-- 12 examples, 0 failures will be shown on the screen.
+- 3 examples, 0 failures will be shown on the screen.
 
 # Author
 
