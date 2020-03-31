@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'httparty'
 require 'csv'
+require 'rubocop'
 
 require_relative '../lib/export.rb'
 

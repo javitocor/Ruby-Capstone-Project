@@ -1,4 +1,5 @@
 require 'csv'
+require 'rubocop'
 
 class Export
   def initialize(products, prices, access)
