@@ -8,7 +8,7 @@ class Export
     @access = access
     export_data
   end
-
+  private
   def export_data
     CSV.open('search_disney.csv', 'w') do |csv|
       @products.zip(@prices, @access) { |x| csv << x }
