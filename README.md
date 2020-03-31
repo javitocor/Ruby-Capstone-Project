@@ -66,8 +66,11 @@ Contributions, issues and feature requests are welcome! Start by:
 # Video Presentation
 - Feel free to check out this [link](https://www.loom.com/share/2960dfb8dee840cf9107be44a1c81f60) with a full project explanation.
 
-# Attributions and Credit
-🚀
+# Attributions and Credit 🚀
+- Microverse
+- Disney
+- HTTParty Gem
+- Nokogiri Gem
 
 # Show your support
 Give a ⭐️ if you like this project!

@@ -11,9 +11,7 @@ class Export
 
   def export_data
     CSV.open('search_disney.csv', 'w') do |csv|
-      csv << @products
-      csv << @prices
-      csv << @access
+      @products.zip(@prices,@access) {|x| csv << x}
     end
   end
 end
