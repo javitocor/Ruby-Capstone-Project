@@ -7,7 +7,7 @@ class Start
   def initialize
     banner
   end
-  public
+
   def search
     input
     @searching = Bot.new(@keywords)
@@ -17,7 +17,9 @@ class Start
     exportation
     research
   end
+
   private
+
   def input
     puts 'Search in Disney.com'
     puts 'Please enter the keywords for your search'
@@ -37,7 +39,7 @@ class Start
     puts 'This website helps you to find everything you want in Disney online shop.'
     puts 'Type your keywords separated by one space and press enter to find out everything related to Disney.'
   end
-  
+
   def show_results
     puts '***********'
     @searching.print_results

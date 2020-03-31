@@ -17,7 +17,9 @@ class Bot
     num_pages
     parse_results
   end
+
   private
+
   def num_pages
     @items = @parse_page.css('h6#total-items span').text.to_f
     @items_per_page = 96
@@ -83,7 +85,9 @@ class Bot
       @result_access.push(access_str)
     end
   end
+
   public
+
   def print_results
     puts 'The search has finished'
     puts "We have found #{@items.to_i} results that match your keywords"
