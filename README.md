@@ -2,7 +2,7 @@
 This is the Ruby's Capstone project for Microverse. This project creates a web scraper built-up with Ruby
 
 # What it does
-With this program, built with Ruby, you can access to all the data from Disney's online shop, get all the products and its prices. You will not lose more time navigating through the website, the products are listed on your terminal and stored in an separated CSV file for each search.
+With this program, built with Ruby, you can access data from Disney's online shop, retrieving a list of all products and their prices. You will not lose more time navigating through the website; the products are listed on your terminal and stored in a separate CSV file for each search.
 
 # Screenshots
 ![screenshot](/assets/screenshot.png) 
@@ -39,7 +39,7 @@ With this program, built with Ruby, you can access to all the data from Disney's
 - Once you have cloned the repo and run 'ruby ./bin/main.rb' you will be able to add as many keywords ( space-separated ) as you wish to get the results from Disney's online shop.
 
 # Run tests
-- Git clone this repo and cd the to the repositorie folder.
+- Git clone this repo and cd the to the repositories folder.
 - Install rspec with gem install rspec.
 - Run rspec in Command Line.
 - 3 examples, 0 failures will be shown on the screen.
@@ -48,9 +48,9 @@ With this program, built with Ruby, you can access to all the data from Disney's
 
 👤 Javier Oriol Correas Sanchez Cuesta
 
-- Github: [@githubhandle](https://github.com/javitocor)
-- Twitter: [@twitterhandle](https://twitter.com/JavierCorreas4)
-- Linkedin: [linkedin](https://www.linkedin.com/in/javier-correas-sanchez-cuesta-15289482/)
+- Github: [@javitocor](https://github.com/javitocor)
+- Twitter: [@JavierCorreas4](https://twitter.com/JavierCorreas4)
+- Linkedin: [Javier Oriol Correas Sanchez Cuesta](https://www.linkedin.com/in/javier-correas-sanchez-cuesta-15289482/)
 
 # 🤝 Contributing
 Contributions, issues and feature requests are welcome! Start by:
