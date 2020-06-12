@@ -43,6 +43,8 @@ With this program, built with Ruby, you can access data from Disney's online sho
 - Install rspec with gem install rspec.
 - Run rspec in Command Line.
 - 3 examples, 0 failures will be shown on the screen.
+# Future features
+- Add different pages to scratch
 
 # Author
 
