@@ -26,9 +26,6 @@ With this program built with Ruby, you can access data from Disney's online shop
 - Nokogiri gem
 - HTTParty gem
 
-# Live Demo
-You can find it here [![Run on Repl.it](https://repl.it/badge/github/javitocor/Ruby-Capstone-Project)](https://repl.it/github/javitocor/Ruby-Capstone-Project)
-
 # Prerequisites
 - Get Ruby latest version.
 - You can check your version typing 'ruby -v' on your terminal
